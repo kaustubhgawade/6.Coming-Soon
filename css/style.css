@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+.container{
+    height: 100vh;
+}
+.bg-image{
+    background-image: url(../img/forestbridge.jpg);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.header{
+    padding: 12px 24px;
+    font-size: 1.75em;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: opac 1s;
+}
+#line-1{
+    font-size: 4em;
+    line-height: 1.5em;
+    margin: 10px 0;
+}
+#line-2{
+    font-size: 1.75em;
+    line-height: 2em;
+    margin: 10px 0;
+}
+hr{
+    width:50%;
+    margin:0 auto;
+}
+.footer{
+    padding: 12px 24px;
+    font-size: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+@keyframes opac {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
